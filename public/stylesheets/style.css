@@ -1,18 +1,52 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
 body {
   padding: 100px;
-  font: 14px "Roboto", sans-serif;
-  background-color: #e3f3f7;
-  color: #363636;
+  font: 14px "Inconsolata", sans-serif;
+  background-color: #f7f7f7;
+  color: #9c9c9c;
+}
+
+.spect-md {
+  margin-top: 70px;
 }
 
 a {
   color: #00b7ff;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-header {
+  color: #516ca3;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.text-main {
+  color: #637596;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.text-status {
+  font-size: 4em;
+  color: #4d5358;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+p.version {
+  text-align: right;
+}
+
 img.img-logo {
   display: block;
   margin: auto;
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
+  -webkit-filter: drop-shadow(12px 12px 12px rgba(50, 50, 50, 0.5));
+  filter: drop-shadow(12px 12px 12px rgba(50, 50, 50, 0.5));
 }

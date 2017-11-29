@@ -2,6 +2,7 @@ extends layout
 
 block content
   img(src="/images/database-warning.svg" class="img-logo")
-  h1= message
-  h2= error.status
+  div.spect-md
+  h1.text-header= message
+  h1.text-status= error.status
   pre #{error.stack}
