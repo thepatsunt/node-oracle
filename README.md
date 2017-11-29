@@ -2,7 +2,12 @@
 
 ### Database server Oracle.
 
+คู่มือการใช้งาน
+
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
+// ติดตั้ง package
+$ npm install
+
+// run node server
+$ node .
 ```
