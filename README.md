@@ -45,16 +45,16 @@
   };
 ```
 
-### Step 3 : เริ่มสร้างกันเลย
+### Step 3 : เริ่มสร้างกันเลย 🎉
 
-สร้างโฟลเดอร์ภายใต้ app ตัวอย่าง ./app/demo
+📢 สร้างโฟลเดอร์ภายใต้ app ตัวอย่าง ./app/demo
 และภายในโฟลเดอร์ที่เราสร้างจะประกอบไปด้วย
 
 [![bbb.jpg](https://s17.postimg.org/ca147gu0f/bbb.jpg)](https://postimg.org/image/fgvnr3egb/)
 
-```bash
-> ไฟล์ routes.js
+📄 ไฟล์ routes.js
 
+```bash
   const controller = require("./controller");
   function setup(router) {
     // source code
@@ -62,9 +62,9 @@
   exports.setup = setup;
 ```
 
-```bash
-> ไฟล์ controller.js
+📄 ไฟล์ controller.js
 
+```bash
   const model = require("./model");
   const bcrypt = require("bcrypt");
   const httpError = require("../http-error");
@@ -72,9 +72,9 @@
   // source code
 ```
 
-```bash
-> ไฟล์ model.js
+📄 ไฟล์ model.js
 
+```bash
   const Model = require("../model");
 
   // source code
@@ -84,16 +84,16 @@
 
 ### GET ALL : เรียกดูข้อมูลทั้งหมด
 
-```bash
-> ไฟล์ ./routes.js
+📄 ไฟล์ routes.js
 
+```bash
   ...
   router.get("/show", controller.getAll)
 ```
 
-```bash
-> ไฟล์ ./controller.js
+📄 ไฟล์ controller.js
 
+```bash
   ...
   module.exports.getAll = (req, res, next) => {
     model.findAll(data => {
@@ -102,9 +102,9 @@
   };
 ```
 
-```bash
-> ไฟล์ ./model.js
+📄 ไฟล์ model.js
 
+```bash
   ...
   module.exports.findAll = callback => {
     let sql = ` SELECT column FROM table_name `;
